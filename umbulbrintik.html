@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Halaman Berita - Umbul Brintik</title>
+    <!-- Menggunakan Tailwind CSS untuk styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Menggunakan Font Awesome untuk ikon -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Menggunakan font Poppins dari Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Mengatur font default untuk seluruh halaman */
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="w-full bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="w-full max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-center"
+      >
+        <!-- Logo -->
+        <a class="flex items-center space-x-3" href="#">
+          <img
+            src="images/logoumkla.png"
+            alt="logo kabupaten klaten"
+            class="h-12 w-12 object-contain"
+            width="48"
+            height="48"
+          />
+          <span class="text-2xl font-semibold text-green-700">UmKla</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main
+      class="w-full max-w-screen-xl mx-auto px-6 py-8 flex flex-col items-center"
+    >
+      <!-- Gambar Utama -->
+      <img
+        src="images/brintik.jpeg"
+        alt="umbul brintik"
+        class="w-full rounded-md shadow-md mb-6 object-cover max-h-72"
+        height="480"
+        width="1200"
+      />
+      <!-- Artikel -->
+      <article class="w-full text-gray-800 text-lg leading-relaxed mb-8 px-2">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+          Umbul Brintik, Kejernihan Air dan Ketenangan Alam di Sudut Klaten
+        </h3>
+        <p>
+          Umbul Brintik merupakan salah satu umbul tersembunyi di Kabupaten
+          Klaten yang menawarkan kejernihan air luar biasa dan suasana yang
+          tenang. Terletak di Desa Ngrundul, Kecamatan Kebonarum, Umbul Brintik
+          menjadi pilihan tepat bagi wisatawan yang ingin menikmati wisata air
+          alami tanpa keramaian.
+        </p>
+        <p class="mt-4">
+          Air di Umbul Brintik berasal dari sumber mata air alami yang mengalir
+          sepanjang tahun. Dengan kedalaman yang tidak terlalu dalam dan air
+          yang jernih, pengunjung dapat dengan aman bermain air atau sekadar
+          berendam sambil menikmati udara segar pedesaan.
+        </p>
+        <p class="mt-4">
+          Keindahan Umbul Brintik tidak hanya terletak pada kejernihan airnya,
+          tetapi juga pada suasananya yang masih asri dan belum banyak tersentuh
+          pembangunan modern. Area sekitar kolam dihiasi pepohonan rindang yang
+          memberikan keteduhan alami bagi para pengunjung.
+        </p>
+        <p class="mt-4">
+          Meskipun fasilitas yang tersedia masih sederhana, kenyamanan dan
+          ketenangan yang ditawarkan menjadikan Umbul Brintik sebagai tempat
+          favorit bagi warga lokal yang ingin melepas penat atau berlibur
+          bersama keluarga dengan suasana yang damai.
+        </p>
+        <p class="mt-4">
+          Warga setempat secara swadaya menjaga kebersihan dan kelestarian
+          lingkungan sekitar Umbul Brintik. Dengan harga tiket masuk yang sangat
+          terjangkau, tempat ini cocok untuk semua kalangan yang mencari
+          ketenangan dan kesegaran di tengah alam.
+        </p>
+      </article>
+
+      <!-- Tombol Kembali -->
+      <button
+        aria-label="Kembali ke halaman utama"
+        class="flex items-center space-x-2 bg-green-700 hover:bg-green-800 text-white font-semibold px-6 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-1"
+        onclick="window.location.href='index.html';"
+        type="button"
+      >
+        <i class="fas fa-arrow-left"></i>
+        <span>Kembali</span>
+      </button>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-gray-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-center space-y-6 md:space-y-0"
+        >
+          <!-- Informasi Footer -->
+          <div class="text-center md:text-left">
+            <h3 class="text-xl font-bold text-white">UmKla - Umbul Klaten</h3>
+            <p class="mt-2 text-sm">
+              Segarkan Harimu di Bumi Seribu Umbul – Nikmati Wisata Air Khas
+              Klaten
+            </p>
+          </div>
+          <!-- Ikon Media Sosial -->
+          <div class="flex justify-center space-x-6">
+            <a
+              aria-label="Facebook"
+              class="text-gray-300 hover:text-white"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+            <a
+              aria-label="Twitter"
+              class="text-gray-300 hover:text-white"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a
+              aria-label="Instagram"
+              class="text-gray-300 hover:text-white"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Hak Cipta -->
+        <div
+          class="mt-8 border-t border-green-600 pt-6 text-center text-sm text-green-200"
+        >
+          © 2025 Umbul Klaten. Arriwae.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
