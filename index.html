@@ -1,39 +1,55 @@
 <!DOCTYPE html>
+<!-- Menentukan bahwa ini adalah dokumen HTML -->
+
 <html lang="en">
+  <!-- Mulai dokumen HTML dengan bahasa Inggris -->
+
   <head>
-    <!-- Metadata dasar untuk dokumen HTML -->
+    <!-- Bagian head berisi informasi tentang dokumen -->
+
     <meta charset="UTF-8" />
-    <!-- Mengatur karakter encoding ke UTF-8 -->
+    <!-- Mengatur encoding karakter ke UTF-8 supaya bisa menampilkan semua jenis karakter -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Membuat halaman responsif -->
+    <!-- Mengatur tampilan agar responsif di berbagai ukuran layar -->
+
     <title>Umbul Klaten</title>
-    <!-- Judul halaman yang akan muncul di tab browser -->
+    <!-- Judul yang muncul di tab browser -->
 
-    <!-- Menggunakan Tailwind CSS untuk styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Menghubungkan dengan framework CSS Tailwind untuk styling -->
 
-    <!-- Menggunakan Font Awesome untuk ikon -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- Menambahkan Font Awesome untuk ikon-ikon -->
 
-    <!-- Menggunakan font Poppins dari Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Menambahkan font Poppins dari Google Fonts -->
+
+    <link rel="manifest" href="manifest.json" />
+    <!-- Menghubungkan dengan file manifest untuk PWA -->
+
+    <script src="app.js"></script>
+    <!-- Menghubungkan dengan file JavaScript untuk fungsi-fungsi website -->
 
     <style>
-      /* Mengatur font default untuk seluruh halaman */
       body {
         font-family: "Poppins", sans-serif;
       }
+      /* Mengatur font default untuk seluruh website menjadi Poppins */
     </style>
   </head>
+
   <body>
-    <!-- Header / Navigasi -->
+    <!-- Header Section -->
     <header class="bg-white shadow-md sticky top-0 z-50">
+      <!-- Header dengan latar putih, bayangan, dan selalu di atas saat di-scroll -->
+
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <!-- Logo -->
@@ -101,18 +117,18 @@
       </div>
     </header>
 
-    <!-- Script untuk Menu Mobile -->
+    <!-- Navigasi Mobile -->
     <script>
-      // Mendapatkan elemen tombol menu dan menu navigasi
-      const btn = document.getElementById("mobile-menu-button"); // Tombol untuk membuka/menutup menu
-      const menu = document.getElementById("mobile-menu"); // Menu navigasi untuk tampilan mobile
+      const btn = document.getElementById("mobile-menu-button");
+      // Mengambil tombol menu mobile
 
-      // Menambahkan event listener untuk tombol
+      const menu = document.getElementById("mobile-menu");
+      // Mengambil elemen menu mobile
+
       btn.addEventListener("click", () => {
-        // Ketika tombol diklik, kelas "hidden" pada menu akan diaktifkan/dinonaktifkan
-        // Kelas "hidden" digunakan untuk menyembunyikan menu
         menu.classList.toggle("hidden");
       });
+      // Saat tombol diklik, menu akan muncul/sembunyi
     </script>
 
     <!-- Hero Section -->
@@ -120,6 +136,8 @@
       id="hero"
       class="relative w-full h-screen flex items-center justify-center"
     >
+      <!-- Bagian utama website dengan gambar besar dan teks di tengah -->
+
       <!-- Gambar Latar Belakang -->
       <img
         src="images/gambarhero.jpg"
@@ -364,258 +382,266 @@
       </div>
     </section>
 
-   <!-- Section Galeri -->
-<section id="galeri" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <!-- Judul Section -->
-  <h2 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">
-    Galeri Foto Destinasi Wisata Umbul di Klaten
-  </h2>
+    <!-- Section Galeri -->
+    <section id="galeri" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Judul Section -->
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">
+        Galeri Foto Destinasi Wisata Umbul di Klaten
+      </h2>
 
-  <!-- Grid untuk Menampilkan Gambar -->
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-    <!-- Gambar 1 -->
-    <img
-      src="images/1.jpeg"
-      alt="1"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 2 -->
-    <img
-      src="images/2.jpeg"
-      alt="2"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 3 -->
-    <img
-      src="images/3.jpeg"
-      alt="3"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 4 -->
-    <img
-      src="images/4.jpeg"
-      alt="4"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 5 -->
-    <img
-      src="images/5.jpeg"
-      alt="5"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 6 -->
-    <img
-      src="images/6.jpeg"
-      alt="6"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 7 -->
-    <img
-      src="images/7.jpeg"
-      alt="7"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 8 -->
-    <img
-      src="images/8.jpeg"
-      alt="8"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 9 -->
-    <img
-      src="images/9.jpeg"
-      alt="9"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 10 -->
-    <img
-      src="images/10.jpeg"
-      alt="10"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 11 -->
-    <img
-      src="images/11.jpeg"
-      alt="11"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-    <!-- Gambar 12 -->
-    <img
-      src="images/12.jpeg"
-      alt="12"
-      class="w-full h-40 object-cover rounded-lg shadow-md"
-      height="400"
-      loading="lazy"
-      width="600"
-    />
-  </div>
-</section>
+      <!-- Grid untuk Menampilkan Gambar -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <!-- Gambar 1 -->
+        <img
+          src="images/1.jpeg"
+          alt="1"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 2 -->
+        <img
+          src="images/2.jpeg"
+          alt="2"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 3 -->
+        <img
+          src="images/3.jpeg"
+          alt="3"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 4 -->
+        <img
+          src="images/4.jpeg"
+          alt="4"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 5 -->
+        <img
+          src="images/5.jpeg"
+          alt="5"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 6 -->
+        <img
+          src="images/6.jpeg"
+          alt="6"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 7 -->
+        <img
+          src="images/7.jpeg"
+          alt="7"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 8 -->
+        <img
+          src="images/8.jpeg"
+          alt="8"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 9 -->
+        <img
+          src="images/9.jpeg"
+          alt="9"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 10 -->
+        <img
+          src="images/10.jpeg"
+          alt="10"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 11 -->
+        <img
+          src="images/11.jpeg"
+          alt="11"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+        <!-- Gambar 12 -->
+        <img
+          src="images/12.jpeg"
+          alt="12"
+          class="w-full h-40 object-cover rounded-lg shadow-md"
+          height="400"
+          loading="lazy"
+          width="600"
+        />
+      </div>
+    </section>
 
-
-   <!-- Section Kontak -->
-<section
-id="kontak"
-class="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full"
->
-<!-- Judul Section -->
-<h2 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">
-  Kontak Kami
-</h2>
-
-<!-- Formulir Kontak -->
-<form
-  class="max-w-7xl mx-auto space-y-6 px-4 sm:px-6 lg:px-8"
-  action="#"
-  method="POST"
->
-  <!-- Input Nama Lengkap -->
-  <div>
-    <label class="block text-sm font-medium text-gray-700 mb-1" for="name">
-      Nama Lengkap
-    </label>
-    <input
-      class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 focus:border-green-500 focus:ring-green-500 focus:outline-none focus:ring-1"
-      id="name"
-      name="name"
-      placeholder="Masukkan nama lengkap Anda"
-      required=""
-      type="text"
-    />
-  </div>
-
-  <!-- Input Alamat Email -->
-  <div>
-    <label class="block text-sm font-medium text-gray-700 mb-1" for="email">
-      Alamat Email
-    </label>
-    <input
-      class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 focus:border-green-500 focus:ring-green-500 focus:outline-none focus:ring-1"
-      id="email"
-      name="email"
-      placeholder="Masukkan alamat email Anda"
-      required=""
-      type="email"
-    />
-  </div>
-
-  <!-- Input Kritik dan Saran -->
-  <div>
-    <label class="block text-sm font-medium text-gray-700 mb-1" for="message">
-      Kritik dan Saran
-    </label>
-    <textarea
-      class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 focus:border-green-500 focus:ring-green-500 focus:outline-none focus:ring-1"
-      id="message"
-      name="message"
-      placeholder="Masukkan kritik dan saran Anda"
-      required=""
-      rows="4"
-    ></textarea>
-  </div>
-
-  <!-- Tombol Kirim -->
-  <div class="text-center">
-    <button
-      class="inline-flex justify-center rounded-md border border-transparent bg-green-700 py-2 px-6 text-white font-semibold shadow-sm hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-      type="submit"
+    <!-- Section Kontak -->
+    <section
+      id="kontak"
+      class="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full"
     >
-      Kirim Pesan
-    </button>
-  </div>
-</form>
-</section>
+      <!-- Judul Section -->
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">
+        Kontak Kami
+      </h2>
 
+      <!-- Formulir Kontak -->
+      <form
+        class="max-w-7xl mx-auto space-y-6 px-4 sm:px-6 lg:px-8"
+        action="#"
+        method="POST"
+      >
+        <!-- Input Nama Lengkap -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="name"
+          >
+            Nama Lengkap
+          </label>
+          <input
+            class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 focus:border-green-500 focus:ring-green-500 focus:outline-none focus:ring-1"
+            id="name"
+            name="name"
+            placeholder="Masukkan nama lengkap Anda"
+            required=""
+            type="text"
+          />
+        </div>
+
+        <!-- Input Alamat Email -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="email"
+          >
+            Alamat Email
+          </label>
+          <input
+            class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 focus:border-green-500 focus:ring-green-500 focus:outline-none focus:ring-1"
+            id="email"
+            name="email"
+            placeholder="Masukkan alamat email Anda"
+            required=""
+            type="email"
+          />
+        </div>
+
+        <!-- Input Kritik dan Saran -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="message"
+          >
+            Kritik dan Saran
+          </label>
+          <textarea
+            class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 focus:border-green-500 focus:ring-green-500 focus:outline-none focus:ring-1"
+            id="message"
+            name="message"
+            placeholder="Masukkan kritik dan saran Anda"
+            required=""
+            rows="4"
+          ></textarea>
+        </div>
+
+        <!-- Tombol Kirim -->
+        <div class="text-center">
+          <button
+            class="inline-flex justify-center rounded-md border border-transparent bg-green-700 py-2 px-6 text-white font-semibold shadow-sm hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+            type="submit"
+          >
+            Kirim Pesan
+          </button>
+        </div>
+      </form>
+    </section>
 
     <!-- Footer -->
-<footer class="bg-green-700 text-gray-300">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <!-- Bagian Atas Footer -->
-    <div
-      class="flex flex-col md:flex-row md:justify-between md:items-center space-y-6 md:space-y-0"
-    >
-      <!-- Informasi Footer -->
-      <div class="text-center md:text-left">
-        <h3 class="text-xl font-bold text-white">UmKla - Umbul Klaten</h3>
-        <p class="mt-2 text-sm">
-          Segarkan Harimu di Bumi Seribu Umbul – Nikmati Wisata Air Khas Klaten
-        </p>
-      </div>
+    <footer class="bg-green-700 text-gray-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <!-- Bagian Atas Footer -->
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-center space-y-6 md:space-y-0"
+        >
+          <!-- Informasi Footer -->
+          <div class="text-center md:text-left">
+            <h3 class="text-xl font-bold text-white">UmKla - Umbul Klaten</h3>
+            <p class="mt-2 text-sm">
+              Segarkan Harimu di Bumi Seribu Umbul – Nikmati Wisata Air Khas
+              Klaten
+            </p>
+          </div>
 
-      <!-- Ikon Media Sosial -->
-      <div class="flex justify-center space-x-6">
-        <!-- Tautan ke Facebook -->
-        <a
-          aria-label="Facebook"
-          class="text-gray-300 hover:text-white"
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-facebook-f fa-lg"></i>
-        </a>
-        <!-- Tautan ke Twitter -->
-        <a
-          aria-label="Twitter"
-          class="text-gray-300 hover:text-white"
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-twitter fa-lg"></i>
-        </a>
-        <!-- Tautan ke Instagram -->
-        <a
-          aria-label="Instagram"
-          class="text-gray-300 hover:text-white"
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-instagram fa-lg"></i>
-        </a>
-      </div>
-    </div>
+          <!-- Ikon Media Sosial -->
+          <div class="flex justify-center space-x-6">
+            <!-- Tautan ke Facebook -->
+            <a
+              aria-label="Facebook"
+              class="text-gray-300 hover:text-white"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+            <!-- Tautan ke Twitter -->
+            <a
+              aria-label="Twitter"
+              class="text-gray-300 hover:text-white"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <!-- Tautan ke Instagram -->
+            <a
+              aria-label="Instagram"
+              class="text-gray-300 hover:text-white"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </div>
+        </div>
 
-    <!-- Bagian Bawah Footer -->
-    <div
-      class="mt-8 border-t border-green-600 pt-6 text-center text-sm text-green-200"
-    >
-      © 2025 Umbul Klaten. Arriwae.
-    </div>
-  </div>
-</footer>
-</body>
+        <!-- Bagian Bawah Footer -->
+        <div
+          class="mt-8 border-t border-green-600 pt-6 text-center text-sm text-green-200"
+        >
+          © 2025 Umbul Klaten. Arriwae.
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
